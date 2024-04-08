@@ -8,7 +8,6 @@ export class AuthService {
     const userFound = await repository.user.findUnique({
       where: {
         email: userData.email,
-        password: userData.password,
       },
     });
 
