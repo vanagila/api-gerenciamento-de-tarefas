@@ -12,6 +12,7 @@ model User {
   name      String  @db.VarChar(100)
   email     String  @unique @db.VarChar
   password  String  @db.Text
+  authToken String? @map("auth_token") @db.Text
 
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("update_at")
