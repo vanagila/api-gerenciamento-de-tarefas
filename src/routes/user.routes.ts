@@ -2,7 +2,7 @@ import { Router } from "express";
 import { UserController } from "../controllers";
 import { Login, Register } from "../middlewares";
 
-export const userRoutes = () => {
+export const authRoutes = () => {
   const router = Router();
   const controller = new UserController();
   const register = new Register();
