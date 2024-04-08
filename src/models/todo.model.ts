@@ -1,5 +1,9 @@
 export class Todo {
-  constructor(private _id: string, private _content: string) {}
+  constructor(
+    private _id: string,
+    private _content: string,
+    private _done: boolean
+  ) {}
 
   public get id(): string {
     return this._id;
@@ -9,10 +13,15 @@ export class Todo {
     return this._content;
   }
 
+  public get done(): boolean {
+    return this._done;
+  }
+
   public toJSON() {
     return {
       id: this._id,
       content: this._content,
+      done: this._done,
     };
   }
 }
