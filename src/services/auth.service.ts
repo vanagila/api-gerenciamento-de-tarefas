@@ -48,4 +48,17 @@ export class AuthService {
       data: { token, user: payloadToken },
     };
   }
+
+  public async logout(userId: string): Promise<ResponseDTO> {
+    await repository.user.update({
+      where: { id: userId },
+      data: { authToken: null },
+    });
+
+    return {
+      code: 201,
+      ok: true,
+      message: "Logout feito com sucesso",
+    };
+  }
 }
