@@ -1,0 +1,8 @@
+POST http://localhost:8080/todos HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImI5NjA4ZWJkLWRiYTAtNDI4Yi1iMTJhLWFjMDU5ZmE3MjMxYiIsImVtYWlsIjoibmluaW5oYUBvdXRyb2VtYWlsLmNvbSIsImlhdCI6MTcxMjc4NDIzNiwiZXhwIjoxNzEyNzg3ODM2fQ.MzdBAXZXAFF56BLHF8K0YKlF31vXbAC48xrAyAh6cOc
+
+{
+  "content":"Comprar ração",
+  "done": false
+}

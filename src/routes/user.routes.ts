@@ -2,7 +2,7 @@ import { Router } from "express";
 import { UserController } from "../controllers";
 import { Login, Register } from "../middlewares";
 
-export const authRoutes = () => {
+export const userRoutes = () => {
   const router = Router();
   const controller = new UserController();
   const register = new Register();
@@ -10,6 +10,7 @@ export const authRoutes = () => {
 
   router.post("/", [register.validate], controller.register);
   router.post("/login", [login.validate], controller.login);
+  router.post("/logout", controller.logout);
 
   return router;
 };
