@@ -30,17 +30,10 @@ export class TodoController {
 
   public async getTodos(req: Request, res: Response) {
     try {
-      const userId = req.headers["user-id"];
-      if (!userId) {
-        return res.status(401).json({
-          code: 401,
-          ok: false,
-          message: "ID do usuário não fornecido no cabeçalho da requisição",
-        });
-      }
+      const { user } = req.query;
 
       const service = new TodoService();
-      const response = await service.listTodos(userId as string);
+      const response = await service.listTodos(user as string | undefined);
 
       return res.status(response.code).json(response);
     } catch (error: any) {
