@@ -1,4 +1,0 @@
-DELETE http://localhost:8080/todos/delete-all HTTP/1.1
-content-type: application/json
-user-id: b9608ebd-dba0-428b-b12a-ac059fa7231b
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImI5NjA4ZWJkLWRiYTAtNDI4Yi1iMTJhLWFjMDU5ZmE3MjMxYiIsImVtYWlsIjoibmluaW5oYUBvdXRyb2VtYWlsLmNvbSIsImlhdCI6MTcxMjc4ODAwMywiZXhwIjoxNzEyNzkxNjAzfQ.jBmJCEHtvTURaCKmH0frSpVaXI9BA_2uDTyJSMqzAZ8

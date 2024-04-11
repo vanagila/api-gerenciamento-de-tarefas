@@ -30,5 +30,8 @@
     "start": "node ./dist/index.js",
     "postinstall": "prisma generate",
     "prisma:deploy": "prisma migrate deploy"
+  },
+  "engines": {
+    "node": "21"
   }
 }
