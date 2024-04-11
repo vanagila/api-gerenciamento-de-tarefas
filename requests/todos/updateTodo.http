@@ -1,7 +1,7 @@
-PUT http://localhost:8080/todos/6403fe7c-8c5a-48b5-8566-6fe003c04925 HTTP/1.1
+PUT http://localhost:8080/todos/ HTTP/1.1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImI5NjA4ZWJkLWRiYTAtNDI4Yi1iMTJhLWFjMDU5ZmE3MjMxYiIsImVtYWlsIjoibmluaW5oYUBvdXRyb2VtYWlsLmNvbSIsImlhdCI6MTcxMjcwNzUzOCwiZXhwIjoxNzEyNzExMTM4fQ.N7Z8wqppHiLgk6_z2PGkD457zygiAGeGO4kIQ2Nz0dY
+Authorization: Bearer
 
 {
-  "done": false
+  "done": true
 }
