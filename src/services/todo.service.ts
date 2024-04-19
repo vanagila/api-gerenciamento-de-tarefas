@@ -160,6 +160,6 @@ export class TodoService {
   }
 
   private mapToModel(todo: TodoPrisma): Todo {
-    return new Todo(todo.id, todo.content, todo.done);
+    return new Todo(todo.id, todo.content, todo.done, todo.createdAt);
   }
 }
