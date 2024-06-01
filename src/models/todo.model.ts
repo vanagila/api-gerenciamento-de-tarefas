@@ -2,7 +2,7 @@ export class Todo {
   constructor(
     private _id: string,
     private _content: string,
-    private _done: boolean,
+    private _done: boolean | null,
     private _createdAt: Date
   ) {}
 
@@ -14,7 +14,7 @@ export class Todo {
     return this._content;
   }
 
-  public get done(): boolean {
+  public get done(): boolean | null {
     return this._done;
   }
 

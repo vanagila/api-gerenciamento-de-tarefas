@@ -14,7 +14,7 @@ export class TodoController {
 
       const response = await service.createTodo({
         content,
-        done,
+        done: done ?? false,
         userId: id,
       });
 

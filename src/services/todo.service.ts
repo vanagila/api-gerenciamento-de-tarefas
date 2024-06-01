@@ -8,7 +8,7 @@ export class TodoService {
     const newTodo = await repository.todo.create({
       data: {
         content: todoData.content,
-        done: todoData.done,
+        done: todoData.done ?? false,
         userId: todoData.userId,
       },
     });
