@@ -1,5 +1,5 @@
 export interface CreateTodoDTO {
   content: string;
-  done: boolean;
+  done?: boolean;
   userId: string;
 }
